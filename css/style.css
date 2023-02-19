@@ -159,7 +159,12 @@ input.email:focus{
   box-shadow: none;
 }
 
-#subscribe-btn:hover{
+#subscribe-btn:hover {
+  background-color: #212427;
+  color: #f8f9fa;
+}
+
+#subscribe-btn{
   background-color: #e9c46a;
   color: #212427;
 }
