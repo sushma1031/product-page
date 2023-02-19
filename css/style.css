@@ -55,23 +55,15 @@ button.download{
 .sample-image{
   transform: rotate3d(1, -1, 1, 60deg);
   width: 60%;
-  margin: -30px 0 0 0;
   filter: drop-shadow(30px 30px 15px rgba(0, 0, 0, 0.75));
   position: relative;
   top: -5px;
   transition: top, filter 300ms, 300ms ease-in-out;
 }
 
-.sample-image:hover{
-  top: -20px;
-  filter: drop-shadow(50px 50px 15px rgba(0, 0, 0, 0.5));
-}
-
 #features{
   padding: 4rem 7rem 2rem;
   background-color: white;
-  position: relative;
-  top: -3rem;
   /* z-index: 1; */
 }
 
@@ -99,7 +91,6 @@ button.download{
 }
 
 #popular-LUTs{
-  margin-top: -3rem;
   padding: 2rem 0;
 }
 
@@ -151,4 +142,38 @@ button.download{
 footer{
   background-color: #212529;
   color:rgba(200, 200, 200, 1);
+}
+
+@media (max-width: 1028px){
+  #title{
+    text-align: center;
+  }
+  
+  #title .container-fluid {
+  padding: 3% 10%;
+}
+
+  .sample-image{
+    position: static;
+    transform: none;
+    transition: none;
+    filter: drop-shadow(20px 0px 15px rgba(0, 0, 0, 0.75));
+  }
+
+  .review-text{
+    width: 75%;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .review-slide{
+    min-height: 408px;
+  }
+}
+
+@media (min-width: 1028px){
+  .sample-image:hover {
+      top: -20px;
+      filter: drop-shadow(50px 50px 15px rgba(0, 0, 0, 0.5));
+    }
 }
