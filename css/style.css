@@ -151,34 +151,49 @@ button.download{
 
 #footer .container-fluid{
   padding-top: 0;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
 }
 
-.company-footer{
-  text-align: justify;
+input.email:focus{
+  border: none;
+  box-shadow: none;
+}
+
+#subscribe-btn:hover{
+  background-color: #e9c46a;
+  color: #212427;
 }
 
 .company-logo{
   margin-left: -1rem;
 }
 
-/* .email{
-  background-color: rgba(0, 0, 0, 0);
-  color: rgba(200, 200, 200, 0.8);
-  outline: none;
-  border: solid 1px rgba(200, 200, 200, 0.8);
-  border-radius: 5px;
- padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem; 
-} */
-
 .copyright{
   opacity: 80%;
+  margin: auto;
 }
 
 footer .nav-link {
   color: rgba(200, 200, 200, 0.8);
+  transition: color 0ms;
+}
+
+footer .nav-link:hover{
+  color: rgba(200, 200, 200, 1);
+}
+
+.socials{
+  justify-content: end;
+}
+
+.credit a{
+  text-decoration: underline;
+  color: rgba(200, 200, 200, 0.8);
+  transition: color 200ms ease-in-out;
+}
+
+.credit a:hover {
+  color: rgba(200, 200, 200, 1);
 }
 
 @media (max-width: 1028px){
@@ -206,6 +221,11 @@ footer .nav-link {
   .review-slide{
     min-height: 408px;
   }
+
+    .socials {
+      justify-content: start;
+      padding-left:calc(var(--bs-gutter-x) * .5);
+    }
 }
 
 @media (min-width: 1028px){
