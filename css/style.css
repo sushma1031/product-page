@@ -193,6 +193,14 @@ footer .nav-link:hover{
   color: rgba(200, 200, 200, 1);
 }
 
+.footer-end {
+  justify-content: space-between;
+}
+
+.credit-group {
+  text-align: center;
+}
+
 .socials{
   justify-content: end;
 }
